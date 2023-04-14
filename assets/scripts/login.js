@@ -8,6 +8,7 @@ const btnLogin = document.querySelector('#btn-login');
 console.log(document.location);
 console.log(document.location.origin);
 console.log(document.location.pathname);
+const urlLogin = document.location.href + 'home.html';
 //checking
 function check(){
     const storedName = localStorage.getItem('username');
@@ -20,7 +21,7 @@ function check(){
     if(userName.value == storedName && userPass.value == storedPass){
         console.log('You are logged in.');
 
-       window.location.assign(`${document.location.origin}${document.location.pathname}/home.html`);
+       window.location.assign(urlLogin);
     }else{
         console.log('Error on login');
         message.style.display = 'block';
