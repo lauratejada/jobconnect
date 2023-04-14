@@ -5,10 +5,10 @@ localStorage.setItem('password', '123456');
 
 const btnLogin = document.querySelector('#btn-login');
 
-console.log(document.location);
-console.log(document.location.origin);
-console.log(document.location.pathname);
-const urlLogin = document.location.href + 'home.html';
+//console.log(document.location);
+//console.log(document.location.origin);
+//console.log(document.location.pathname);
+//const urlLogin = document.location.href + 'home.html';
 //checking
 function validateLogin(){
     const storedName = localStorage.getItem('username');
@@ -18,10 +18,10 @@ function validateLogin(){
 
     const userName = document.querySelector('#userName');
     const userPass = document.querySelector('#userPassword');
-    const message = document.querySelector('.message-invalid');
+    const message = document.querySelector('.message-invalid p');
 
-    console.log(userName.value);
-    console.log(userPass.value);
+    //console.log(userName.value);
+    //console.log(userPass.value);
 
     if((userName.value == storedName) && (userPass.value == storedPass)){
         console.log('You are logged in.');
@@ -30,7 +30,7 @@ function validateLogin(){
         window.location.href = 'home.html';
     }else{
         console.log('Error on login');
-        message.style.display = 'block';
+        message.style.color = 'red';
     }
 }
 

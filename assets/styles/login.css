@@ -128,8 +128,8 @@ section {
     opacity: 0.7;
 }
 
-.message-invalid  p {
-    color: rgb(182, 1, 1);
+.message-invalid p{
+    color: transparent;
     font-size: 12px;
-    display: none;
+    line-height: 13px;
 }
