@@ -20,7 +20,7 @@ function check(){
     if(userName.value == storedName && userPass.value == storedPass){
         console.log('You are logged in.');
 
-       window.location.assign(`${document.location.origin}/home.html`);
+       window.location.assign(`${document.location.origin}${document.location.pathname}/home.html`);
     }else{
         console.log('Error on login');
         message.style.display = 'block';
