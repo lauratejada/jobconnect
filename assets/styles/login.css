@@ -131,4 +131,5 @@ section {
 .message-invalid  p {
     color: rgb(182, 1, 1);
     font-size: 12px;
+    display: none;
 }
