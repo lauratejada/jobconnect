@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Laura Tejada" />
+    <meta name="description" content="JobConnect" />
+    <meta name="keywords" content="html,css,web development, seo, services, projects" />
+    <title>JobConnect</title>
+    <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="assets/styles/index.css" media="all">
+    <script src="assets/scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container flex">
+            <a href="#" class="title flex">
+                <h1>JobConnect</h1>
+            </a>
+            <nav class="nav">
+                <div class="navbar">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x not-show"></i>
+                </div>
+                <ul>
+                    <li><a href="#" target="_self">Home</a></li>
+                    <li><a href="#" target="_self">Network</a></li>
+                    <li><a href="#" target="_self">Notifications</a></li>
+                    <li><a href="#" target="_self">Jobs</a></li>
+                    <li><a href="#" target="_self">Messaging</a></li>
+                </ul>
+            </nav>
+            <div class="user-icon">
+                <img class="user-avatar" src="assets/images/user-icon.png" width="47" alt="user-icon" title="User Account">
+                <div class="display-user-info not-show">
+                    <div class="user-account-info">
+                        <!--
+                        <div class="user-data"> 
+                            <ul>
+                                <li>Laura Tejada</li>
+                                <li>laura2191@hotmail.com</li>
+                            </ul>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container flex">
+            <section class="left">
+                <div class="profile-container">
+                    <div class="profile-content">
+                        <div class="profile-image">
+                            <img src="assets/images/user-icon.png" alt="user-icon">
+                        </div>
+                        <div class="profile-data">
+                            <h3>Laura Tejada</h3>
+                            <div>Web Designer and Developer | System Analyst | Business Administration | Technology Management | EN-ES</div>
+                            <div>Views <span>170</span></div>
+                            <div>Connections <span>200</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="middle">
+                    <div class="post-input">
+                        <textarea class="post-text" placeholder="What's new?"></textarea>
+                        <div class="input-file">
+                            <label>
+                                <input type="file" class="file-input" placeholder="Choose a file"  accept="image/*" >
+                                <div class="message-input">
+                                    <p> </p>
+                                </div> 
+                                <span><i class="fa fa-image"></i></span>
+                            </label>
+                            <button class="button" title="Click to post">Post</button>
+                        </div>
+                    </div>
+                
+                    <div class="posts">
+                        <div class="post">
+                            <div class="post-header flex">
+                                <div class="flex">
+                                    <img src="assets/images/user-icon.png" width="47" alt="user-icon">
+                                    <h4>Laura Tejada</h4>
+                                </div>
+                                <div>
+                                    <p>April 13, 2023</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-content-text">
+                                    <p>Hello! Today I hope everyone have a great day! Enjoy your day!</p>
+                                </div>
+                                <div class="post-content-image">
+                                    <img class="preview" src="assets/images/image01.jpg" width="100%" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="post-header flex">
+                                <div class="flex">
+                                    <img src="assets/images/user-icon.png" width="47" alt="user-icon">
+                                    <h4>Laura Tejada</h4>
+                                </div>
+                                <div>
+                                    <p>April 13, 2023</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-content-text">
+                                    <p>Hello! Today I hope everyone have a great day! Enjoy your day!</p>
+                                </div>
+                                <div class="post-content-image">
+                                    <img class="preview" src="" width="100%" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+            <section class="right">
+                <div class="contacts-container">
+                    <h3>People you may know</h3>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container row">
+            <div class="logo col">
+                <a href="#" class="title">
+                    <h1>JobConnect</h1>
+                </a>
+            </div>
+            <div class="social col">
+                <ul>
+                    <li><a href="#" target="_self"><i class="fa-brands fa-instagram"></i></a></a></li>
+                    <li><a href="#" target="_self"><i class="fa-brands fa-square-facebook" id="icon1"></i></a></li>
+                    <li><a href="#" target="_self"><i class="fa-brands fa-square-twitter" id="icon1"></i></a></li>
+                </ul>
+            </div>
+            <div class="copy col">
+                <p>Designed by Laura Tejada &copy; 2023 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

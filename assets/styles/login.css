@@ -1,0 +1,134 @@
+@import url(reset.css);
+
+:root {
+    --app-header-text-color: #2374E1;
+}
+
+body {
+    background-image: url(../images/background-image.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #d1e8ff;
+    overflow: hidden;
+    background: rgb(55,141,185);
+    background: linear-gradient(122deg, rgba(55,141,185,0.7343312324929971) 0%, rgba(242,241,248,1) 100%);
+    color: #070707;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+section {
+    display: grid;
+    place-items: center;
+}
+
+.login-title h1{
+    width: 100%;
+    text-align: center;
+    color: var(--app-header-text-color);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 76px;;
+    color: rgb(255, 255, 255);
+    background: --var(--app-header-background-color);
+    text-shadow: 2px 2px 0 var(--app-header-text-color), 2px -2px 0 var(--app-header-text-color), -2px 2px 0 var(--app-header-text-color), -2px -2px 0 var(--app-header-text-color), 2px 0px 0 var(--app-header-text-color), 0px 2px 0 var(--app-header-text-color), -2px 0px 0 var(--app-header-text-color), 0px -2px 0 var(--app-header-text-color);
+}
+
+.login-content {
+    width: 640px;
+    display: flex;
+    background-color: #f2f1f861;
+    border-radius: 5px;
+    box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+}
+
+.login-image {
+    width: 320px;
+    background-image: url(../images/background-image.jpg);
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px; 
+}
+
+.login-image img{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.login {
+    margin: 50px auto;
+    width: 320px;
+}
+
+.login form {
+    margin: auto;
+    padding: 22px 22px 22px 22px;
+    width: 100%;
+    background: transparent;
+}
+
+.login > form > h2 {
+    line-height: 50px;
+}
+
+.login form span {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    border-right: 3px solid #434a52;
+    color: #555555;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.login form input[type="text"], .login form input[type="password"] {
+    background-color: #f7f5f5;
+    border-radius: 0px 3px 3px 0px;
+    color: #505050;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login form input[type="submit"] , .login form input[type="button"]  {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    background: #2374E1;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(131, 131, 131, 0.4);
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    animation-delay: 0.3s; 
+    margin-top: 10px;
+}
+
+.login form input[type="button"] {
+    background: #fff;
+    color: #2374E1;
+    border: 1px solid #2374E1;
+}
+
+#login form input[type="submit"]:hover, #login form input[type="button"]:hover {
+    opacity: 0.7;
+}
+
+.message-invalid  p {
+    color: rgb(182, 1, 1);
+    font-size: 12px;
+}
