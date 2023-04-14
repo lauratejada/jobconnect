@@ -101,7 +101,7 @@ section {
     font-size: 16px;
 }
 
-.login form input[type="submit"] , .login form input[type="button"]  {
+.login form input[id="btn-login"] , .login form input[id="btn-register"]  {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.2px;
@@ -118,13 +118,13 @@ section {
     margin-top: 10px;
 }
 
-.login form input[type="button"] {
+.login form input[id="btn-register"] {
     background: #fff;
     color: #2374E1;
     border: 1px solid #2374E1;
 }
 
-#login form input[type="submit"]:hover, #login form input[type="button"]:hover {
+.login form input[id="btn-login"]:hover, .login form input[id="btn-register"]:hover {
     opacity: 0.7;
 }
 
